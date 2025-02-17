@@ -1,0 +1,253 @@
+/* Main Profile Layout */
+.profile {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+/* Profile Page Layout */
+.profilepage {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 280px;
+    align-items: center;
+    width: 100%;
+}
+
+/* Banner Section */
+.banner-container {
+    margin-top: 55px;
+    width: 100%;
+    height: 180px;
+    background-color: #222; /* Fallback */
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Profile Top Section */
+.profile-top-section {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    /* background: yellowgreen; */
+    /* flex-direction: row; */
+
+}
+
+/* Profile Image */
+.profile-image-container {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid black;
+    position: absolute;
+    bottom: -60px;
+    background-color: black;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Profile Details */
+.profile-content {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    text-align: center;
+    width: 80%;
+}
+.container-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.about-name-profile {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.about-info {
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    margin-top: 5px;
+}
+
+.profile-link {
+    color: #3ea6ff;
+    cursor: pointer;
+}
+
+/* Buttons Section */
+.profile-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.profile-button {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.subscribe-button {
+    background-color: white;
+    color: black;
+}
+
+.join-button {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    border: 1px solid white;
+}
+
+/* Navigation Bar */
+.profile-nav {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.nav-item {
+    font-size: 16px;
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.nav-item.active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+
+.profile-nav-element{
+    display: flex;
+    width: 100%;
+    color: white;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.yt-single-videos{
+    height: 190px;
+    width: 220px;
+    text-decoration: none;
+    color: white;
+    /* background: yellow; */
+}
+
+.img-yt-popular{
+    width: 190px;
+    height: 150px;
+}
+.title-popular{
+    font-size: 18px;
+    font-weight: 500;
+}
+.info-popular{
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(143, 142, 142);
+}
+
+
+.all-elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   gap: 20px;
+    flex-wrap: wrap;
+}
+.category1{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+}
+.heading{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Fixes */
+@media screen and (max-width: 768px) {
+    .profilepage {
+        margin-left: 0;
+    }
+
+    .banner-img {
+        height: 140px;
+    }
+
+    .profile-image-container {
+        width: 100px;
+        height: 100px;
+        bottom: -50px;
+    }
+
+    .about-name-profile {
+        font-size: 24px;
+    }
+
+    .about-info {
+        font-size: 13px;
+    }
+
+    .profile-buttons {
+        flex-direction: column;
+    }
+}

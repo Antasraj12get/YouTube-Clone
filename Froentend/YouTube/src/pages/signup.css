@@ -1,0 +1,114 @@
+.signup{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.signup-card{
+    width: 50%;
+    height: 80%;
+    border: 3px solid rgb(114, 112, 112);
+    margin-top: 100px;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+.title-cardsignup{
+    font-size: 32px;
+    font-weight: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.user-fillbox-signup{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 25px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.usernamesignup{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filetype{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 30px;
+}
+
+.inputuser{
+    width: 60%;
+    height: 45px;
+    color: white;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222222;
+}
+.buttons-sets-user{
+    width: 60%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* <!-- HTML !-->
+<button class="button-24" role="button">Button 24</button> */
+
+/* CSS */
+.signup-btn {
+  background: #FF4742;
+  border: 1px solid rgb(132, 129, 129);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  /* margin: 0 20px; */
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.signup-btn:hover, .signup-btn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.signup-btn:active {
+  opacity: .5;
+}

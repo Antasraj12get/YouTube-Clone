@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 56px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+/* Left Navigation */
+.left_nav {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.menu {
+    cursor: pointer;
+    padding: 8px;
+}
+
+.yt-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.logo-text {
+    color: white;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-text .sup {
+    font-size: 12px;
+    margin-left: 2px;
+    color: gray;
+    position: absolute;
+    top: 8px;
+    left: 195px;
+}
+
+/* Middle Navigation */
+.middle_nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 650px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #303030;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.input-box {
+    flex-grow: 1;
+    padding: 10px;
+    background: none;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search {
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #303030;
+    border-left: 1px solid #555;
+}
+
+.mic {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #303030;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Right Navigation */
+.right_nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.create-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    background-color: #303030;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #555;
+    transition: background 0.3s ease;
+}
+
+.create-box:hover {
+    background-color: #424242;
+}
+
+.create-box h4 {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.notification {
+    position: relative;
+    cursor: pointer;
+}
+
+.notification span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.profile img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav-model{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    left: 1450px;
+}
+.model-all{
+    background: #7e7e7e;
+    padding: 5px 17px;
+    color: black;
+    cursor: pointer;
+    &:hover{
+        background: #000;
+        color: white;
+    }
+}

@@ -1,0 +1,80 @@
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .upload-box {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    width: 500px;
+    margin-top: 70px;
+  }
+  
+  .upload-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .youtube-logo {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #222;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .file-upload label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .file-upload input {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .upload-btn, .home-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #ff0000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .home-btn {
+    background: #333;
+  }
+  
