@@ -1,6 +1,12 @@
-// import bcrypt from "bcryptjs";
 import User from "../Model/user.model.js";
 import bcryptjs from "bcryptjs";
+import jwt from 'jsonwebtoken'
+
+const cookieOption = {
+    httpOnly: true,
+    secure: false,
+    sameSite: 'lax'
+};
 
 export const Signup = async (req, res) => {
     try {
@@ -37,17 +43,24 @@ export const Signup = async (req, res) => {
 };
 
 
-export const Signin = async (req , res)=> {
+export const Signin = async (req, res) => {
     try {
-        const{userName,passWord} = req.body;
-        const user = await User.findOne({userName});
-        if(user && await bcryptjs.compare(passWord, user.passWord)){
-            res.json({message: 'Logged in successfullay', success:"true"})
-        }else{
-            res.status(400).json({error:'Invalid Credentials'});
+        const { userName, passWord } = req.body;
+        const user = await User.findOne({ userName });
+        if (user && await bcryptjs.compare(passWord, user.passWord)) {
+            const token = jwt.sign({ userId: user._id }, 'secretKey')
+            res.cookie('token', token, cookieOption);
+            // console.log(token)
+            res.json({ message: 'Logged in successfullay', success: "true" })
+        } else {
+            res.status(400).json({ error: 'Invalid Credentials' });
         }
     } catch (error) {
-        res.status(500).json({error:"server error"})
+        res.status(500).json({ error: "server error" })
     }
 }
 
+
+export const LogOut = async (req, res) => {
+    res.clearCookie('token', cookieOption).json({ message: 'Logged out successfullay' })
+}
