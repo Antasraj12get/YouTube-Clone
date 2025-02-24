@@ -113,7 +113,7 @@ export const GetVideoById = async (req, res) => {
 export const getAllVideoByUserId = async (req,res)=>{
     try {
         let{userId} = req.params;
-        const video = await Video.find({user:userId}).populate('user', 'title thumbnail user createdAt');;
+        const video = await Video.find({user:userId}).populate('user', 'title thumbnail user createdAt');
         res.status(200).json({ success: "true", "videos": video });
     } catch (error) {
         res.status(500).json({ error: error.message || "Internal Server Error" });
