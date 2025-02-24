@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-
+// import { auth } from "../Middleware/authentication";
 const userSchema = mongoose.Schema({
     channelName: {
         type: String,

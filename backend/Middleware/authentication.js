@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken"
-import User from "../Model/user.model"
+import User from "../Model/user.model.js"
 
-const auth  =  async (req , res , next) => {
+export const auth  =  async (req , res , next) => {
     const token = req.cookies.token;
     if(!token){
         return res.status(401).json({error:"No token, authorization denied"});

@@ -25,7 +25,7 @@ const videoSchema = new mongoose.Schema({
     videoType: { 
         type: String, 
         enum: ["mp4", "webm", "avi", "mkv"], 
-        required: true 
+        // required: true 
     },
     like: { 
         type: Number, 
